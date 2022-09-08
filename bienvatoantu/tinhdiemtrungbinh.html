@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+  <input type="number" id ="vatly" name="vatly" > <br>
+
+  Điểm vật lý
+</p>
+<p>
+<input type="number" id ="hoahoc" name="hoahoc" > <br>
+
+Điểm hóa học
+</p>
+<p>
+    <input type="number" id ="sinhhoc" name="sinhhoc"> <br>
+
+Điểm sinh học
+</p>
+<p>
+    <p type="number" id ="tongdiem" name="tongdiem" ></p> <br>
+    Tính tổng điểm
+
+    <button onclick="tongdiem()">Click</button>
+</p>
+<p type="number" id ="diemtrungbinh" name="diemtrungbinh" ></p>
+Điểm trung bình
+<button onclick="diemtrungbinh()">Click</button>
+
+</body>
+<script>
+    function tongdiem() {
+        let a = +document.getElementById("vatly").value
+        let b = +document.getElementById("hoahoc").value
+        let c = +document.getElementById("sinhhoc").value
+        let tong = a + b + c
+        document.getElementById("tongdiem").innerText = tong}
+        function diemtrungbinh() {
+            let a = +document.getElementById("vatly").value
+            let b = +document.getElementById("hoahoc").value
+            let c = +document.getElementById("sinhhoc").value
+            let tong = a + b + c
+            let trungbinh = +tong/3
+
+        document.getElementById("diemtrungbinh").innerText = trungbinh
+
+    }
+
+</script>
+
+</html>

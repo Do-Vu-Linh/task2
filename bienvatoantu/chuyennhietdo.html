@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyennhietdo</title>
+</head>
+<body>
+<input type="number" id="nhietdoc"> Nhiệt Độ C
+<button onclick="nhietdoc()">chuyển đổi</button> <br>
+Nhiệt độ F là :
+<p id="nhietdof">  </p>
+
+<input type="number" id="bankinh"> Bán kính hình tròn
+<button onclick="bankinh()">Tính diện tích và chu vi </button> <br>
+Diện tích hình tròn
+<p id="dientich"> </p>
+Chu vi hình tròn
+<p id= "chuvi" > </p> 
+
+</body>
+<script> function nhietdoc() {
+    let a = +document.getElementById('nhietdoc').value
+    let c = a*9/5+32
+document.getElementById("nhietdof").innerHTML = "<p>" + c + "</p>"}
+ function bankinh(){
+    let d =+document.getElementById('bankinh').value
+     let s = 3.14*d*d
+     let cv = 2*3.14*d
+     document.getElementById("dientich").innerText = s
+     document.getElementById("chuvi").innerText = cv
+ }
+
+</script>
+</html>
