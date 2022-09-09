@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Amout
+<input type="number" name="soluong" id="soluong" >
+<button onclick="chuyendoi()"> chuyển đổi</button>
+<form>
+  <select id="tien1" onchange="chontien()">
+    <option  value="1">USD</option>
+      <option value="23000">VND</option>
+  </select>
+    <select  id="tien2" onchange="chontien2()">
+        <option value="1">USD</option>
+        <option value="23000">VND</option>
+    </select>
+    <P id="ketqua"> kết quả </P>
+</form>
+<script>
+    function chuyendoi() {
+        var a = +document.getElementById("tien1").value
+        var b = +document.getElementById("tien2").value
+        var c = +document.getElementById("soluong").value
+        var d = b/a*c
+        document.getElementById("ketqua").innerText = d
+    }
+</script>
+
+</body>
+</html>
