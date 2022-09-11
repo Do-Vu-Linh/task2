@@ -1,0 +1,22 @@
+table {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    width: 540px;
+    height: 250px;
+    border: 12px aqua solid;
+    border-top-width: 5px;
+    background-color: white;
+}
+th{
+    text-align: center;
+    color: White;
+    background-color: #f30b22;
+    padding: 3px
+}
+.cot1{
+    color: blue;
+    text-align:right;
+}
+.cot2 {
+    color: coral;
+    text-align: left;
+}

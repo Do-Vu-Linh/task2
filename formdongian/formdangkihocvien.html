@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formdangkihocvien</title>
+</head>
+<style>
+    table {
+        background:#ffff81;
+        padding : 5px;
+        width: 400px;
+        height: 300px;
+    }
+    #tieude {
+        background: lightskyblue;
+        color: blue;
+     padding-bottom: 10px;
+        text-align: left;
+    }
+    .cot1{
+        color: blue;
+    }
+</style>
+<body>
+<table>
+    <tr>
+    <th id="tieude" colspan="2"> Đăng kí học viên </th>
+    </tr>
+ <tr>
+     <td class="cot1" id="hoten"> Họ và tên</td>
+     <td> <input type="text" name="hoten"> </td>
+
+ </tr>
+ <tr>
+     <td class="cot1"> Ngày sinh</td>
+     <td> <input type="date" name="date"> </td>
+
+ </tr>
+ <tr>
+     <td class="cot1"> Giới tính</td>
+     <td> <input type="radio" name="gender"> Nam
+         <input type="radio" name="gender" > Nữ
+     </td>
+
+ </tr>
+    <tr>
+        <td class="cot1"> Địa chỉ</td>
+        <td> <textarea> </textarea> </td>
+
+
+    </tr>
+    <tr>
+        <td class="cot1"> <label for="chonlop"></label>   Lớp</td>
+        <td> <select id="chonlop">
+            <option value="">--chọn lớp--</option>
+            <option name="chonlop" value="Lớp 1" > lớp 1</option>
+            <option name="chonlop " value=" lớp 2"> lớp 2</option>
+        </select>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td class="cot1"> Email</td>
+        <td> <input type="email" name="email"> </td>
+
+    </tr>
+
+    <tr>
+        <td class="cot1"> Điện thoại</td>
+        <td> <input type="Number" name="dienthoai"> </td>
+
+    </tr>
+
+    <tr>
+        <td> </td>
+
+        <td id="dongcuoi">
+            <input type="submit" name = "submit" value="Đăng nhập">
+            <input type="reset" name = "reset" value="Nhập lại">
+        </td>
+
+    </tr>
+
+
+</table>
+</body>
+</html>
