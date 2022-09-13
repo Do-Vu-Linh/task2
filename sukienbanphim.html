@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sưkienbanphim</title>
+</head>
+<body onload ="docReady()">
+<img src="1412.jpg"  style="position:relative ; left:0; top:0 "; height ="400" width= "400" id="quabong">
+</body>
+<script>
+  function len() {
+    let element = document.getElementById('quabong') ;
+      element.style.top =parseInt(element.style.top) -5 +"px" ;
+
+  }
+  function xuong () {
+    let element = document.getElementById('quabong') ;
+    element.style.top =parseInt(element.style.top) +5 +"px" ;
+
+  }
+  function trai() {
+    let element = document.getElementById('quabong') ;
+    element.style.left =parseInt(element.style.top) -5 +"px" ;
+
+  }
+  function phai() {
+    let element = document.getElementById('quabong') ;
+    element.style.left =parseInt(element.style.top) +5 +"px" ;
+
+  }
+  function dichuyen(evt) {
+    switch (evt.keyCode) {
+
+      case 37 :
+        trai();
+        break;
+      case 38 :
+        len();
+        break
+      case 39 :
+        phai();
+        break;
+      case 40 :
+        xuong()
+        break;
+    }
+
+  }
+  function docReady() {
+    window.addEventListener('keydown', dichuyen);
+  }
+
+
+</script>
+</html>
