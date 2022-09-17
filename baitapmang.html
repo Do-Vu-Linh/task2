@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+Bài 1
+    myColor = ["Red", "Green", "White", "Black"];
+    document.write(myColor.join(" "))
+///////////////////////////////////////////////////////////////////////////////
+bài 2 : bài tập mảng
+
+let num = prompt("Nhập dãy số : ")
+let str = num.toString()
+let result = [str[0]] ;
+for (i=1;i<str.length;i++){
+    if ((str[i-1]%2=== 0)&&(str[i]%2=== 0)) {
+        result.push("-", str[i]);
+    }
+    else {
+        result.push(str[i]);
+    }
+}
+
+document.write(result.join(""));
+//////////////////////////////////////////////////////////////////////////////////////
+bài 3
+let text = prompt("nhập dãy chữ")
+let str = text.toString()
+let result = [str[0]] // Không hiểu kiểu gì khi để số 0 thif nó bị sai ở phần tử số 0, nếu để số âm thì đúng, còn nếu để số 0 thì thêm 1 hàm xóa bỏ dòng đầu tiên
+for(i=0 ;i<str.length;i++){
+    if  (str[i] == str[i].toUpperCase()){
+        result.push( str[i].toLowerCase())
+    }
+
+    else {
+        result.push(str[i].toUpperCase())
+    }
+
+}
+result.shift()
+document.write(result.join(""))
+
+
+</script>
+
+</html>
