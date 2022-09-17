@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính chỉ số BMI</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<body>
+<input id="can nang" type="number" > Nhập cân nặng kg <br> <br>
+
+<input id="height" type="number" > Nhập chiều cao mét <br> <br>
+<input id="convert" onclick="convert()" value="convert" type="button">
+<script>
+function convert() {
+    let a = document.getElementById("can nang").value
+    let b = document.getElementById("height").value
+
+    let bmi = a/ Math.pow(b,2)
+    if (bmi < 18)
+        document.write("Underweight");
+    else if (bmi < 25.0)
+        document.write("Normal");
+    else if (bmi < 30.0)
+        document.write("Overweight");
+    else
+        document.write("Obese");
+
+    }
+
+
+
+</script>
+
+</body>
+</html>
+</body>
+</html>
