@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập từ điển</title>
+</head>
+<body>
+Nhập từ : <input type="text" name="text" id="text">
+<button onclick="convert()" value="search" > Tìm kiếm</button>
+<p id="result"></p>
+</body>
+<script>
+    function convert() {
+        let eng = ["one", "two", "three", "four", "five", "six", "seven"]
+        let vn = ["một", "hai", "ba", "bốn", "năm", "sáu", "bảy"]
+        let text = document.getElementById("text").value
+        for (let i = 0; i < eng.length; i++) {
+            if (text === eng[i]) {
+                document.getElementById("result").innerHTML = vn[i]
+            }
+        }
+
+    }
+</script>
+</html>
