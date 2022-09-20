@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+function processCofirm(answer) {
+  let result= ""
+  if(answer){
+    result ="Excelent.We'll play game";
+
+  }else {
+    result="May be later then"
+  }
+  return result;
+}
+let comfirmAnswer = confirm(" Chơi hay nghỉ")
+let theAnswer = processCofirm(comfirmAnswer);
+alert(theAnswer)
+
+</script>
+</html>

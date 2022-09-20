@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timgiatrinhonhat</title>
+</head>
+<body>
+
+</body>
+<script>
+function minArry(arr) {
+  if (arr.length ==0) {
+    return -1 ;
+      }
+  let min = arr[0];
+  for (var i = 0; i <arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i]
+      index = i
+    }
+
+  }
+  return min;
+//nếu cần lấy index của 1 mảng khác thì có cách nào lấy được liên tục như min không
+} let arr1 = [3, 5, 1, 8, -3, 7, 8]
+let min1 = minArry(arr1);
+document.write( " Min của mảng 1 là " + min1 + " vị trí ");
+document.write( index );
+
+
+let arr2 = [7, 12, 6, 9, 20, 56, 89]
+let min2 = minArry(arr2)
+document.write( " Min của mảng 2 là " + min2 + " vị trí ");
+document.write( index );
+let arr3 = []
+let min3 = minArry(arr3)
+alert(min3)
+
+
+</script>
+</html>
