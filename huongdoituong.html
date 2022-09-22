@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>huongdoituong</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let Mydate = function (day, month, year){
+        this.day = day ;
+        this.month = month;
+        this.year = year ;
+        //bỏ cả phần này vẫn chạy bình thường, không hiểu cho vào làm gì
+        
+        // this.getDay = function (){
+        //     return this.day;
+        // }
+        // this .getYear = function (){
+        //     return this.year;
+        // }
+        // this .getMonth = function (){
+        //     return this.month;
+        // }
+        this.setDay = function(day) {
+            this.day  = day;
+        }
+        this.setMonth = function(month) {
+            this.month  = month;
+        }
+        this.setYear = function(year) {
+            this.year  = year;
+        }
+        this.setDate = function setDate (day, month, year){
+            this.day = day;
+            this.month =month;
+            this.year = year;
+        }
+        this.toString = function toString(){
+            alert(this.day + "/" + this.month + "/" + this.year);
+        }
+    } ;
+    let date = new Mydate();
+    // bỏ cái phần này vẫn chạy bình thường vậy cho vào có ý nghĩa gì
+
+    // let day = date.getDay();
+    // let month = date.getMonth();
+    // let year = date.getYear();
+    // alert(( day +"/"+month+"/"+year))
+    date.setDate(10,2,2022);
+    date.toString();
+
+    date.setDate(20,2,2023);
+date.toString();
+
+</script>
 </html>
