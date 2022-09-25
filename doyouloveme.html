@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div { position: absolute;
+        left: 500px;
+        top: 300px;
+    }
+
+
+         #no {
+        position: absolute;
+    }
+</style>
+<body>
+<div>
+
+
+<p> Do you love me</p>
+<button onclick="yes()" id="yes"> Yes</button>
+<button onmouseover="noClick()" id = "no"> No</button>
+</div>
+<script>
+    function yes() {
+        alert("chuẩn cơm mẹ nấu")
+    }
+    function noClick(){
+        let x = window.innerWidth
+        let y = window.innerHeight
+        let button = document.getElementById("no")
+        button.style.left = x * Math.random() + "px"
+        button.style.top = y * Math.random() + "px"
+
+    }
+</script>
+</body>
+</html>
