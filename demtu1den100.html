@@ -6,7 +6,7 @@
 </head>
 <body>
 
-
+<p id="x"></p>
 </body>
 <script>
 <!--bài 1-->
@@ -67,5 +67,21 @@
 //         sum = +sum + a
 //     }
 // document.write(+sum)
+//bài 7
+let x = 0
+for(let i=1;i<=100;i++) {
+    x = i;
+    if (x % 3 == 0 && x % 5 == 0) {
+        document.write("fizzbuzz" + "<br>")
+    } else if (x % 3 == 0 && x % 5 != 0) {
+        document.write("fizz" +"<br>")
+    } else if (x % 5 == 0 && x % 3 != 0) {
+        document.write("buzz" +"<br>")
+    } else {
+        document.write(x + "<br>")
+
+
+    }
+}
 </script>
 </html>
