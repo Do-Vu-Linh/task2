@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <script src="basic_calculator.js"></script>-->
+    <style>
+        table {
+            width: 300px;
+            height: 500px;
+            border: 5px solid black;
+            text-align: center;
+            margin: auto;
+        }
+
+        #display {
+            height: 50px;
+            font-size: 15px;
+        }
+
+        td input {
+            width: 70%;
+            height: 60%;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th colspan="4">    <input type="text" value="" id="display" size="80"></th>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="showValue(value)"></td>
+            <td><input type="button" value="2" onclick="showValue(value)"></td>
+            <td><input type="button" value="3" onclick="showValue(value)"></td>
+            <td><input type="button" value="+" onclick="showValue(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="showValue(value)"></td>
+            <td><input type="button" value="5" onclick="showValue(value)"></td>
+            <td><input type="button" value="6" onclick="showValue(value)"></td>
+            <td><input type="button" value="-" onclick="showValue(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button"  value="7" onclick="showValue(value)"></td>
+            <td><input type="button" value="8" onclick="showValue(value)"></td>
+            <td><input type="button" name="9" value="9" onclick="showValue(value)"></td>
+            <td><input type="button" name="*" value="*" onclick="showValue(value)"></td>
+        </tr>
+        <tr>
+            <td><input type="reset" name="c" value="c"></td>
+            <td><input type="button" name="0" value="0" onclick="showValue(value)"></td>
+            <td><input type="button" name="=" value="=" id="equalSign" onclick="calculator()"></td>
+            <td><input type="button" name="/" value="/" onclick="showValue(value)"></td>
+        </tr>
+    </table>
+</form>
+</body>
+<script>
+    function showValue(name) {
+        document.getElementById("display").value += name
+    }
+
+    function calculator() {
+        document.getElementById("display").value = eval(document.getElementById("display").value)
+    }
+</script>
+</html>
